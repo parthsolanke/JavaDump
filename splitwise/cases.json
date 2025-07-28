@@ -1,0 +1,75 @@
+[
+  {
+    "name": "Equal Spending",
+    "input": [
+      {"name": "Alice", "amount": 100},
+      {"name": "Bob", "amount": 100}
+    ],
+    "expected": {
+      "spending": {"Alice": 100.0, "Bob": 100.0},
+      "settlements": []
+    }
+  },
+  {
+    "name": "One Person Paid All",
+    "input": [
+      {"name": "Alice", "amount": 600},
+      {"name": "Bob", "amount": 0},
+      {"name": "Charlie", "amount": 0}
+    ],
+    "expected": {
+      "spending": {"Alice": 600.0, "Bob": 0.0, "Charlie": 0.0},
+      "settlements": ["Bob -> Alice: $200.00", "Charlie -> Alice: $200.00"]
+    }
+  },
+  {
+    "name": "Unequal Contributions",
+    "input": [
+      {"name": "Alice", "amount": 300},
+      {"name": "Bob", "amount": 100},
+      {"name": "Charlie", "amount": 100}
+    ],
+    "expected": {
+      "spending": {"Alice": 300.0, "Bob": 100.0, "Charlie": 100.0},
+      "settlements": ["Bob -> Alice: $66.67", "Charlie -> Alice: $66.67"]
+    }
+  },
+  {
+    "name": "Slight Imbalance",
+    "input": [
+      {"name": "Alice", "amount": 120},
+      {"name": "Bob", "amount": 80},
+      {"name": "Charlie", "amount": 100}
+    ],
+    "expected": {
+      "spending": {"Alice": 120.0, "Bob": 80.0, "Charlie": 100.0},
+      "settlements": ["Bob -> Alice: $13.33"]
+    }
+  },
+  {
+    "name": "Four People Mixed",
+    "input": [
+      {"name": "Alice", "amount": 150},
+      {"name": "Bob", "amount": 50},
+      {"name": "Charlie", "amount": 100},
+      {"name": "Dave", "amount": 200}
+    ],
+    "expected": {
+      "spending": {"Alice": 150.0, "Bob": 50.0, "Charlie": 100.0, "Dave": 200.0},
+      "settlements": ["Bob -> Dave: $75.00", "Charlie -> Alice: $25.00"]
+    }
+  },
+  {
+    "name": "Two Paid, Two Did Not",
+    "input": [
+      {"name": "A", "amount": 300},
+      {"name": "B", "amount": 300},
+      {"name": "C", "amount": 0},
+      {"name": "D", "amount": 0}
+    ],
+    "expected": {
+      "spending": {"A": 300.0, "B": 300.0, "C": 0.0, "D": 0.0},
+      "settlements": ["C -> A: $150.00", "D -> B: $150.00"]
+    }
+  }
+]
