@@ -1,7 +1,7 @@
 public class Cargo {
-    private float weight;
-    private boolean hasHighPriority;
-    private CargoType description;
+    private final float weight;
+    private final boolean hasHighPriority;
+    private final CargoType description;
     private boolean isCompleted;
 
     public Cargo(float weight, boolean highPriority, CargoType description) {
