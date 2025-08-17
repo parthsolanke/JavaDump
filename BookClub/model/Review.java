@@ -1,5 +1,7 @@
 package model;
 
+import java.time.LocalDateTime;
+
 public class Review {
     private String comment;
     private double rating;
@@ -11,6 +13,9 @@ public class Review {
         this.comment = comment;
         this.ratedBy = ratedBy;
         this.book = book;
+    }
+
+    public Review(int rating, String john, LocalDateTime localDateTime) {
     }
 
     public String getComment() {

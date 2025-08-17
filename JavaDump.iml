@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/BookCollection" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/EduValt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ExtremeStreams" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/LearningPlatformAnalytics" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Recipe" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SMA" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Splitwise" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Starbucks" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/StudentManager" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Workload" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/cargo" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/dostreams" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/freelancerStream" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java-playground" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/reviewsStream" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/robo" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
